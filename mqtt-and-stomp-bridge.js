@@ -17,9 +17,16 @@ client.connect('compose', 'shines', function(frame) {
                 {headers: {'Content-Type': 'application/json', 'Authorization': request.meta.authorization}},
                 request.meta.method
         ).on('complete', function(data, response) {
-             // send back the identifier if any, allowing the requesting client to match the response        
-            data.messageId = request.meta.messageId || null;
-            client.send('/topic/' + request.meta.authorization + ".to", {}, JSON.stringify(data));
+            
+            var headers = {};
+            
+            // send back the identifier if any, allowing the requesting client to match the response        
+            // keep in header to not pollute the response body
+            if(typeof request.meta.messageId !== 'undefined') {
+              headers.messageId = request.meta.messageId
+            }
+
+            client.send('/topic/' + request.meta.authorization + ".to", headers, JSON.stringify(data));
             console.log("result: " + JSON.stringify(data));
         });
     });
