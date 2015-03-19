@@ -1,9 +1,26 @@
 {
-    "name": "servioticy-brokers",
-    "description": "",
-    "version": "0.0.1",
-    "dependencies": {
-        "restler": "*",
-        "stompjs": "*"
-    }
+  "name": "servioticy-brokers",
+  "description": "servioticy-brokers",
+  "version": "0.0.1",
+  "dependencies": {
+    "restler": "*",
+    "stompjs": "*"
+  },
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muka/servioticy-brokers.git"
+  },
+  "keywords": [
+    "iot",
+    "servioticy",
+    "mqtt",
+    "stomp"
+  ],
+  "author": "",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/muka/servioticy-brokers/issues"
+  },
+  "homepage": "https://github.com/muka/servioticy-brokers"
 }
