@@ -1,0 +1,8 @@
+{
+    "api": "http://localhost:8070",
+    "stomp": {
+        "url": "mqtt://servioticy.local:1883",
+        "user": "compose",
+        "password": "shines"
+    }
+}
