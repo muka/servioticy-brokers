@@ -1,11 +1,37 @@
 
-var start = function(config) {
+var startBridge = function(config) {
 
     var Bridge = require('./lib/Bridge');
     (new Bridge(config)).start(function() {
-        console.info("Bridge started");
+        console.info("So bridge started");
     });
 
+};
+
+
+var startStreamBridge = function(config) {
+
+    var Bridge = require('./lib/StreamBridge');
+
+    (new Bridge(config)).start(function() {
+        console.info("Stream bridge started");
+    });
+};
+
+var startActionsBridge = function(config) {
+
+    var Bridge = require('./lib/ActionBridge');
+
+    (new Bridge(config)).start(function() {
+        console.info("Action bridge started");
+    });
+};
+
+
+var start = function() {
+    startBridge();
+//    startStreamBridge();
+//    startActionsBridge();
 };
 
 start();
