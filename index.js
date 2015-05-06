@@ -1,11 +1,11 @@
 
 var start = function(config) {
 
-    var Bridge = require('./lib/StreamBridge');
-
+    var Bridge = require('./lib/Bridge');
     (new Bridge(config)).start(function() {
         console.info("Bridge started");
     });
+
 };
 
 start();
