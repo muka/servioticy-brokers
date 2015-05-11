@@ -3,6 +3,7 @@
   "description": "servioticy-brokers",
   "version": "0.0.1",
   "dependencies": {
+    "lodash": "^3.8.0",
     "restler": "*",
     "stompjs": "*",
     "winston": "^0.9.0"
