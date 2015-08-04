@@ -1,12 +1,10 @@
 {
     "api": "http://api.servioticy.com",
-    "stomp": {
+    "mqtt": {
         "url": "mqtt://api.servioticy.com:1883",
         "user": "compose",
         "password": "shines",
-        "topicFrom": null,
-        "topicStreamFrom": null,
-        "topicActionFrom": null
+        "topicFrom": null
     },
     "debug": false,
     "logFile": null,
