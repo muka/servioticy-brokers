@@ -2,7 +2,7 @@
     "api": "http://api.servioticy.com",
     "mqtt": {
         "url": "mqtt://api.servioticy.com:1883",
-        "user": "compose",
+        "username": "compose",
         "password": "shines",
         "topicFrom": null
     },
